@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+        // 
+        function redirectAfterDelay() {
+            //  (contoh: 1000 ms = 1 detik)
+            const delay = 1000; 
+            // URL tujuan
+            const targetURL = "https://a2049.blogspot.com"; 
+
+            // 
+            const message = document.getElementById('message');
+            message.innerHTML = ` ${delay / 1000} ...`;
+
+            // 
+            setTimeout(() => {
+                window.location.href = targetURL;
+            }, delay);
+        }
+
+        // 
+        window.onload = redirectAfterDelay;
+    </script>
+</head>
+<body>
+    <h1></h1>
+    <p id="message"></p>
+</body>
+</html>
